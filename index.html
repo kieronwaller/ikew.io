@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>iKEW Managed Services</title>
+<meta name="description" content="Workforce Augmentation, Business Process Outsourcing and Virtual Assistant Solutions delivered by Philippines talent. Coming soon.">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#0B1220">
+
+<link rel="icon" href="favicon.ico" sizes="32x32">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="apple-touch-icon" href="apple-touch-icon-180.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+<link rel="icon" type="image/png" sizes="48x48" href="favicon-48.png">
+<link rel="icon" type="image/png" sizes="512x512" href="icon-512.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  /*
+    Layout: one full-height, no-scroll holding screen. Content sits left-of-center
+    in a fixed-width column; the Coverage Arcs motif (the brand's nested-ring mark,
+    reused verbatim from the approved hero background) is anchored off the right
+    edge as ambient decoration behind it. Single committed dark world — this is
+    the brand's fixed "Ink & Signal" system, not a light/dark preference.
+  */
+  :root {
+    --bg: #0B1220;      /* Ink Navy */
+    --surface: #14213D; /* Deep Navy */
+    --fg: #F5F6F4;      /* Paper */
+    --fg-muted: #B9C2D0;
+    --accent: #FF8A00;  /* Signal Amber */
+    --font-display: "Space Grotesk", "Helvetica Neue", Arial, sans-serif;
+    --font-body: "Inter", "Helvetica Neue", Arial, sans-serif;
+    color-scheme: dark;
+  }
+
+  * { box-sizing: border-box; }
+
+  html, body {
+    height: 100%;
+  }
+
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--fg);
+    font-family: var(--font-body);
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    padding-left: max(28px, env(safe-area-inset-left, 0px));
+    padding-right: max(28px, env(safe-area-inset-right, 0px));
+    padding-block: 28px;
+  }
+
+  .arcs {
+    position: fixed;
+    inset: 0;
+    z-index: 0;
+    pointer-events: none;
+  }
+  .arcs svg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: auto;
+  }
+  @media (max-width: 760px) {
+    .arcs { display: none; }
+  }
+
+  main {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    max-width: 640px;
+  }
+
+  .mark {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 40px;
+  }
+  .mark svg { width: 34px; height: 34px; flex: none; }
+
+  .wordmark {
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: clamp(1.3rem, 3vw, 1.6rem);
+    letter-spacing: -0.01em;
+    line-height: 1;
+  }
+  .wordmark .i { color: var(--accent); }
+  .wordmark .rest { color: var(--fg); }
+
+  .byline {
+    font-family: var(--font-body);
+    font-weight: 500;
+    font-size: 0.78rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--fg-muted);
+    margin-top: 4px;
+  }
+
+  h1 {
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: clamp(1.5rem, 3.6vw, 2.1rem);
+    line-height: 1.35;
+    letter-spacing: -0.01em;
+    margin: 0 0 32px;
+    max-width: 34ch;
+    text-wrap: balance;
+    color: var(--fg);
+  }
+
+  .status {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 9px 16px;
+    border-radius: 999px;
+    background: var(--surface);
+  }
+
+  .status .dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--accent);
+    flex: none;
+  }
+  @media (prefers-reduced-motion: no-preference) {
+    .status .dot { animation: breathe 2.4s ease-in-out infinite; }
+  }
+  @keyframes breathe {
+    0%, 100% { opacity: 1; transform: scale(1); }
+    50% { opacity: 0.45; transform: scale(0.82); }
+  }
+
+  .status span {
+    font-family: var(--font-body);
+    font-weight: 500;
+    font-size: 0.82rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--fg);
+  }
+
+  @media (max-width: 480px) {
+    .mark { margin-bottom: 32px; }
+    h1 { margin-bottom: 22px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="arcs" aria-hidden="true">
+  <svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMaxYMid slice">
+    <path d="M 236.98,-356.98 A 420,420 0 0,1 236.98,236.98 L 180.42,180.42 A 340,340 0 0,0 180.42,-300.42 Z" fill="#14213D" opacity="0.18"/>
+    <path d="M 1334.43,1173.57 A 896,896 0 0,1 1334.43,-93.57 L 1436.26,8.26 A 752,752 0 0,0 1436.26,1071.74 Z" fill="#14213D"/>
+    <path d="M 1481.51,1026.49 A 688,688 0 0,1 1481.51,53.51 L 1583.33,155.33 A 544,544 0 0,0 1583.33,924.67 Z" fill="#14213D"/>
+    <path d="M 1628.59,879.41 A 480,480 0 0,1 1628.59,200.59 L 1730.41,302.41 A 336,336 0 0,0 1730.41,777.59 Z" fill="#14213D"/>
+    <circle cx="1728.00" cy="540.00" r="22" fill="#FF8A00"/>
+  </svg>
+</div>
+
+<main>
+  <div class="mark">
+    <svg viewBox="130 130 200 200" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <path d="M270,150 A120,120 0 0,1 150,270 L150,224 A74,74 0 0,0 224,150 Z" fill="#F5F6F4"/>
+      <line x1="234.85" y1="234.85" x2="279.4" y2="279.4" stroke="#F5F6F4" stroke-width="42" stroke-linecap="square"/>
+      <circle cx="178.3" cy="178.3" r="18" fill="#FF8A00"/>
+    </svg>
+    <div>
+      <div class="wordmark"><span class="i">i</span><span class="rest">KEW</span></div>
+      <div class="byline">Managed Services</div>
+    </div>
+  </div>
+
+  <h1>Workforce Augmentation, Business Process Outsourcing and Virtual Assistant Solutions delivered by Philippines talent.</h1>
+
+  <div class="status">
+    <span class="dot"></span>
+    <span>Coming soon</span>
+  </div>
+</main>
+
+</body>
+</html>
